@@ -1,0 +1,83 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\FilmSitesi\about.html" />
+    <None Include="wwwroot\FilmSitesi\assets\css\style-starter.css" />
+    <None Include="wwwroot\FilmSitesi\assets\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\FilmSitesi\assets\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\FilmSitesi\assets\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\FilmSitesi\assets\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\FilmSitesi\assets\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\FilmSitesi\assets\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\FilmSitesi\assets\images\1.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\2.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\3.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\4.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\5.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\a1.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\a2.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\a3.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\a4.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\a5.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\banner1.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\banner2.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\banner3.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\banner4.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\c1.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\c2.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\c3.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\m1.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\m10.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\m11.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\m12.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\m2.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\m3.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\m4.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\m5.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\m6.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\m7.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\m8.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\m9.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\mid1.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\mid2.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\mid3.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\n1.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\n2.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\n3.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\n4.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\n5.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\n6.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\team1.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\team2.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\team3.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\team4.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\team5.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\images\team6.jpg" />
+    <None Include="wwwroot\FilmSitesi\assets\js\all.js" />
+    <None Include="wwwroot\FilmSitesi\assets\js\app.js" />
+    <None Include="wwwroot\FilmSitesi\assets\js\bootstrap.min.js" />
+    <None Include="wwwroot\FilmSitesi\assets\js\easyResponsiveTabs.js" />
+    <None Include="wwwroot\FilmSitesi\assets\js\jquery-1.9.1.min.js" />
+    <None Include="wwwroot\FilmSitesi\assets\js\jquery-3.3.1.min.js" />
+    <None Include="wwwroot\FilmSitesi\assets\js\jquery.countup.js" />
+    <None Include="wwwroot\FilmSitesi\assets\js\jquery.magnific-popup.min.js" />
+    <None Include="wwwroot\FilmSitesi\assets\js\jquery.waypoints.min.js" />
+    <None Include="wwwroot\FilmSitesi\assets\js\main.js" />
+    <None Include="wwwroot\FilmSitesi\assets\js\owl.carousel.js" />
+    <None Include="wwwroot\FilmSitesi\assets\js\popper.min.js" />
+    <None Include="wwwroot\FilmSitesi\assets\js\theme-change.js" />
+    <None Include="wwwroot\FilmSitesi\contact.html" />
+    <None Include="wwwroot\FilmSitesi\genre.html" />
+    <None Include="wwwroot\FilmSitesi\index.html" />
+    <None Include="wwwroot\FilmSitesi\starter-license-W3Layouts.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+</Project>
