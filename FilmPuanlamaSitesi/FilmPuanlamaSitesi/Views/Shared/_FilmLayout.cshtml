@@ -39,7 +39,7 @@ Author URL: http://w3layouts.com
                     <a class="navbar-brand" href="Film/Index">
                         <span class="fa fa-play icon-log"
                               aria-hidden="true"></span>
-                        Filmogram
+                        Fragmanous
                     </a>
                 </h1>
                 <!-- if logo is image enable this
@@ -81,8 +81,8 @@ Author URL: http://w3layouts.com
                         <div id="search" class="pop-overlay">
                             <div class="popup">
                                 <form action="#" method="post" class="search-box">
-                                    <input type="search" placeholder="Search your Keyword" name="search"
-                                           required="required" autofocus="">
+                                    <input type="search" style="background-color:white; color:orangered; font-size:30px;" 
+                                           placeholder="Search your Keyword" name="search" required="required" autofocus="">
                                     <button type="submit" class="btn">
                                         <span class="fa fa-search"
                                               aria-hidden="true"></span>
@@ -91,22 +91,21 @@ Author URL: http://w3layouts.com
                                 <div class="browse-items">
                                     <h3 class="hny-title two mt-md-5 mt-4">Browse all:</h3>
                                     <ul class="search-items">
-                                        <li><a href="genre.html">Action</a></li>
-                                        <li><a href="genre.html">Drama</a></li>
-                                        <li><a href="genre.html">Family</a></li>
-                                        <li><a href="genre.html">Thriller</a></li>
-                                        <li><a href="genre.html">Commedy</a></li>
-                                        <li><a href="genre.html">Romantic</a></li>
-                                        <li><a href="genre.html">Tv-Series</a></li>
-                                        <li><a href="genre.html">Horror</a></li>
-                                        <li><a href="genre.html">Action</a></li>
-                                        <li><a href="genre.html">Drama</a></li>
-                                        <li><a href="genre.html">Family</a></li>
-                                        <li><a href="genre.html">Thriller</a></li>
-                                        <li><a href="genre.html">Commedy</a></li>
-                                        <li><a href="genre.html">Romantic</a></li>
-                                        <li><a href="genre.html">Tv-Series</a></li>
-                                        <li><a href="genre.html">Horror</a></li>
+                                        <li>@Html.ActionLink("Action", "Genre", "Film")</li>
+                                        <li>@Html.ActionLink("Drama", "Genre", "Film")</li>
+                                        <li>@Html.ActionLink("Family", "Genre", "Film")</li>
+                                        <li>@Html.ActionLink("Thriller", "Genre", "Film")</li>
+                                        <li>@Html.ActionLink("Comedy", "Genre", "Film")</li>
+                                        <li>@Html.ActionLink("Romantic", "Genre", "Film")</li>
+                                        <li>@Html.ActionLink("TV Series", "Genre", "Film")</li>
+                                        <li>@Html.ActionLink("Horror", "Genre", "Film")</li>
+                                        <li>@Html.ActionLink("Crime", "Genre", "Film")</li>
+                                        <li>@Html.ActionLink("Documentary", "Genre", "Film")</li>
+                                        <li>@Html.ActionLink("Turkish Cinema", "Genre", "Film")</li>
+                                        <li>@Html.ActionLink("Adventure", "Genre", "Film")</li>
+                                        <li>@Html.ActionLink("Fantasy", "Genre", "Film")</li>
+                                        <li>@Html.ActionLink("Historical", "Genre", "Film")</li>
+                                        <li>@Html.ActionLink("Science fiction", "Genre", "Film")</li>
                                     </ul>
                                 </div>
                             </div>
@@ -182,34 +181,34 @@ Author URL: http://w3layouts.com
                                 <div class="col-md-3 col-sm-6 sub-two-right mt-5">
                                     <h6>Movies</h6>
                                     <ul>
-                                        <li><a href="#">Movies</a></li>
-                                        <li><a href="#">Videos</a></li>
-                                        <li><a href="#">English Movies</a></li>
-                                        <li><a href="#">Tailor</a></li>
-                                        <li><a href="#">Upcoming Movies</a></li>
-                                        <li><a href="~/FilmSitesi/contact.html">Contact Us</a></li>
+                                        <li>@Html.ActionLink("Movies", "Index", "Film")</li>
+                                        <li>@Html.ActionLink("Videos", "Index", "Film")</li>
+                                        <li>@Html.ActionLink("English Movies", "Index", "Film")</li>
+                                        <li>@Html.ActionLink("Tailor", "Index", "Film")</li>
+                                        <li>@Html.ActionLink("Upcoming Movies", "Index", "Film")</li>
+                                        <li>@Html.ActionLink("Contact us", "Contact", "Film")</li>
                                     </ul>
                                 </div>
                                 <div class="col-md-3 col-sm-6 sub-two-right mt-5">
                                     <h6>Information</h6>
                                     <ul>
-                                        <li><a href="~/FilmSitesi/index.html">Home</a> </li>
-                                        <li><a href="~/FilmSitesi/about.html">About</a> </li>
-                                        <li><a href="#">Tv Series</a> </li>
-                                        <li><a href="#">Blogs</a> </li>
-                                        <li><a href="#">Login</a></li>
-                                        <li><a href="~/FilmSitesi/contact.html">Contact</a></li>
+                                        <li>@Html.ActionLink("Home", "Index", "Film")</li>
+                                        <li>@Html.ActionLink("About", "About", "Film")</li>
+                                        <li>@Html.ActionLink("Tv Series", "Index", "Film")</li>
+                                        <li>@Html.ActionLink("Blog", "Index", "Film")</li>
+                                        <li>@Html.ActionLink("Login", "Index", "Film")</li>
+                                        <li>@Html.ActionLink("Contact", "Contact", "Film")</li>
                                     </ul>
                                 </div>
                                 <div class="col-md-3 col-sm-6 sub-two-right mt-5">
                                     <h6>Locations</h6>
                                     <ul>
-                                        <li><a href="genre.html">Asia</a></li>
-                                        <li><a href="genre.html">France</a></li>
-                                        <li><a href="genre.html">Taiwan</a></li>
-                                        <li><a href="genre.html">United States</a></li>
-                                        <li><a href="genre.html">Korea</a></li>
-                                        <li><a href="genre.html">United Kingdom</a></li>
+                                        <li>@Html.ActionLink("Asia", "Genre", "Film")</li>
+                                        <li>@Html.ActionLink("France", "Genre", "Film")</li>
+                                        <li>@Html.ActionLink("Taiwan", "Genre", "Film")</li>
+                                        <li>@Html.ActionLink("United States", "Genre", "Film")</a></li>
+                                        <li>@Html.ActionLink("Korea", "Genre", "Film")</a></li>
+                                        <li>@Html.ActionLink("United Kingdom", "Genre", "Film")</li>
                                     </ul>
                                 </div>
                                 <div class="col-md-3 col-sm-6 sub-two-right mt-5">
@@ -233,7 +232,7 @@ Author URL: http://w3layouts.com
                     <div class="copyright-footer">
                         <div class="columns text-lg-left">
                             <p>
-                                &copy; 2020 ProShowz. All rights reserved | Designed by <a href="https://w3layouts.com">W3layouts</a>
+                                &copy; 2020 Filmogram. All rights reserved | Designed by <a href="https://w3layouts.com">W3layouts</a>
                             </p>
                         </div>
 

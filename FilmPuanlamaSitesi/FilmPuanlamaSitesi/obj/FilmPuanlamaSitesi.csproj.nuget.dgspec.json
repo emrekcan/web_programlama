@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emree\\Desktop\\Web Programlama\\FilmPuanlamaSitesi\\FilmPuanlamaSitesi\\FilmPuanlamaSitesi.csproj": {}
+    "C:\\Users\\emree\\Desktop\\Web Programlama\\web_programlama\\FilmPuanlamaSitesi\\FilmPuanlamaSitesi\\FilmPuanlamaSitesi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emree\\Desktop\\Web Programlama\\FilmPuanlamaSitesi\\FilmPuanlamaSitesi\\FilmPuanlamaSitesi.csproj": {
+    "C:\\Users\\emree\\Desktop\\Web Programlama\\web_programlama\\FilmPuanlamaSitesi\\FilmPuanlamaSitesi\\FilmPuanlamaSitesi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emree\\Desktop\\Web Programlama\\FilmPuanlamaSitesi\\FilmPuanlamaSitesi\\FilmPuanlamaSitesi.csproj",
+        "projectUniqueName": "C:\\Users\\emree\\Desktop\\Web Programlama\\web_programlama\\FilmPuanlamaSitesi\\FilmPuanlamaSitesi\\FilmPuanlamaSitesi.csproj",
         "projectName": "FilmPuanlamaSitesi",
-        "projectPath": "C:\\Users\\emree\\Desktop\\Web Programlama\\FilmPuanlamaSitesi\\FilmPuanlamaSitesi\\FilmPuanlamaSitesi.csproj",
+        "projectPath": "C:\\Users\\emree\\Desktop\\Web Programlama\\web_programlama\\FilmPuanlamaSitesi\\FilmPuanlamaSitesi\\FilmPuanlamaSitesi.csproj",
         "packagesPath": "C:\\Users\\emree\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emree\\Desktop\\Web Programlama\\FilmPuanlamaSitesi\\FilmPuanlamaSitesi\\obj\\",
+        "outputPath": "C:\\Users\\emree\\Desktop\\Web Programlama\\web_programlama\\FilmPuanlamaSitesi\\FilmPuanlamaSitesi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\emree\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,20 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.4, )"

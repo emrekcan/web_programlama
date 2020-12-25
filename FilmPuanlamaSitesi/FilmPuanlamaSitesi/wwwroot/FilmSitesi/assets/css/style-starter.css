@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 
 /*--
 Author: W3layouts
@@ -16117,7 +16117,7 @@ h2.resp-accordion {
   display: none;
 }
 
-.resp-tab-content {
+.content {
   display: none;
   padding: 15px;
 }
