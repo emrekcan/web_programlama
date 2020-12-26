@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 
 namespace FilmPuanlamaSitesi.Models.Siniflar
 {
@@ -14,5 +14,9 @@ namespace FilmPuanlamaSitesi.Models.Siniflar
         public DbSet<ContactUs> ContactUses { get; set; }
         public DbSet<Genre> Genres { get; set; }
         public DbSet<Home> Homes { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-8D8KG84\\EMRE;Initial Catalog=FilmDb;Integrated Security=True");
+        }
     }
 }
