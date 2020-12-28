@@ -1,0 +1,36 @@
+﻿@using FilmPuanlamaSitesi.Models.Siniflar
+@model List<Kullanici>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="margin-right:880px; margin-top:100px;">
+    <h2>Users List</h2>
+</div>
+
+<table class="table table-bordered" style="margin-right:100px; width:auto; height:auto;">
+
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>E-MAIL</th>
+        <th>PASSWORD</th>
+        <th>YETKİ</th>
+        <th>BAN</th>
+        <th>AUTHORITY</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+<tr>
+    <td>@x.ID</td>
+    <td>@x.KullaniciAd</td>
+    <td>@x.Email</td>
+    <td>@x.Sifre</td>
+    <td>@x.Yetki</td>
+    <td><button type="button" class="btn btn-warning">BAN</button></td>
+    <td><button type="button" class="btn btn-success">AUTHORITY</button></td>
+</tr>
+    }
+</table>
+<a href="/Admin/SignUp" class="btn btn-primary">Add User</a>

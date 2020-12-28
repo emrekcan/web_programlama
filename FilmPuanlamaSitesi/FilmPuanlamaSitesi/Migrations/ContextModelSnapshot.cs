@@ -129,22 +129,28 @@ namespace FilmPuanlamaSitesi.Migrations
                     b.ToTable("Genres");
                 });
 
-            modelBuilder.Entity("FilmPuanlamaSitesi.Models.Siniflar.Home", b =>
+            modelBuilder.Entity("FilmPuanlamaSitesi.Models.Siniflar.Kullanici", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("Baslik")
+                    b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("FilmLink")
+                    b.Property<string>("KullaniciAd")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Sifre")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Yetki")
+                        .HasColumnType("int");
 
                     b.HasKey("ID");
 
-                    b.ToTable("Homes");
+                    b.ToTable("Kullanicis");
                 });
 #pragma warning restore 612, 618
         }
