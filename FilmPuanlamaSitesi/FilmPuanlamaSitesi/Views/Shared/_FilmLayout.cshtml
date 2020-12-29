@@ -16,10 +16,7 @@ Author URL: http://w3layouts.com
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>
-        ProShowz a Entertainment Category Bootstrap Responsive Website Template | Home
-        :: W3layouts
-    </title>
+    <title>FRAGMANOUS</title>
     <!-- Template CSS -->
     <link rel="stylesheet" href="~/FilmSitesi/assets/css/style-starter.css">
     <!-- Template CSS -->
@@ -70,7 +67,14 @@ Author URL: http://w3layouts.com
                             @Html.ActionLink("Contact", "Contact", "Film")
                         </li>
                     </ul>
-
+                    <div style="margin-bottom:5px; margin-top:5px;">
+                        <button type="button" class="btn btn-warning">
+                            <h5>@Html.ActionLink("Login", "Login", "LoginPage")</h5>
+                        </button>
+                        <button type="button" class="btn btn-success">
+                            <h5>@Html.ActionLink("Register", "Register", "LoginPage")
+                        </button>
+                    </div>
                     <!--/search-right-->
                     <!--/search-right-->
                     <div class="search-right">
@@ -81,7 +85,7 @@ Author URL: http://w3layouts.com
                         <div id="search" class="pop-overlay">
                             <div class="popup">
                                 <form action="#" method="post" class="search-box">
-                                    <input type="search" style="background-color:white; color:orangered; font-size:30px;" 
+                                    <input type="search" style="background-color:white; color:orangered; font-size:30px;"
                                            placeholder="Search your Keyword" name="search" required="required" autofocus="">
                                     <button type="submit" class="btn">
                                         <span class="fa fa-search"
@@ -121,13 +125,14 @@ Author URL: http://w3layouts.com
                 <div class="mobile-position">
                     <nav class="navigation">
                         <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox">
-                                <div class="mode-container">
+                            <div class="mode-container">
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox">
+
                                     <i class="gg-sun"></i>
                                     <i class="gg-moon"></i>
-                                </div>
-                            </label>
+                                </label>
+                            </div>
                         </div>
                     </nav>
                 </div>
@@ -206,8 +211,8 @@ Author URL: http://w3layouts.com
                                         <li>@Html.ActionLink("Asia", "Genre", "Film")</li>
                                         <li>@Html.ActionLink("France", "Genre", "Film")</li>
                                         <li>@Html.ActionLink("Taiwan", "Genre", "Film")</li>
-                                        <li>@Html.ActionLink("United States", "Genre", "Film")</a></li>
-                                        <li>@Html.ActionLink("Korea", "Genre", "Film")</a></li>
+                                        <li>@Html.ActionLink("United States", "Genre", "Film")</li>
+                                        <li>@Html.ActionLink("Korea", "Genre", "Film")</li>
                                         <li>@Html.ActionLink("United Kingdom", "Genre", "Film")</li>
                                     </ul>
                                 </div>
@@ -225,7 +230,6 @@ Author URL: http://w3layouts.com
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
             <div class="below-section">
                 <div class="container">

@@ -573,6 +573,8 @@ C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\
 C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\About\Index.cshtml.g.cs
 C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPageLayout.cshtml.g.cs
 C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
-C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\LoginPage\Index.cshtml.g.cs
 C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
 C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Admin\SignUp.cshtml.g.cs
+C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Update.cshtml.g.cs
+C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\LoginPage\Login.cshtml.g.cs
+C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\LoginPage\Register.cshtml.g.cs

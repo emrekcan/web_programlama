@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FilmPuanlamaSitesi.Models.Siniflar;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace FilmPuanlamaSitesi
 {
@@ -27,6 +28,8 @@ namespace FilmPuanlamaSitesi
         {
             services.AddControllersWithViews();
             //services.AddDbContext<Context>(optionsAction: options => options.UseSqlServer(Configuration.GetConnectionString(name: "DevConnection")));
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            .AddCookie(x => { x.LoginPath = "/LoginPage/Login/"; });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
