@@ -1,0 +1,27 @@
+﻿@model FilmPuanlamaSitesi.Models.Siniflar.Kullanici
+@{
+    ViewData["Title"] = "AddUser";
+    Layout = "~/Views/Shared/_KullaniciLayout.cshtml";
+}
+
+<div style="margin-right:750px; margin-top:100px;">
+    <br />
+    <form class="form-group" method="post">
+        @Html.LabelFor(x => x.KullaniciAd)
+        <br />
+        @Html.TextBoxFor(x => x.KullaniciAd)
+        <br />
+        @Html.LabelFor(x => x.Email)
+        <br />
+        @Html.TextBoxFor(x => x.Email)
+        <br />
+        @Html.LabelFor(x => x.Sifre)
+        <br />
+        @Html.TextBoxFor(x => x.Sifre)
+        <br />
+        <div style="margin-top:10px;">
+            <button class="btn btn-primary">Add User</button>
+        </div>
+    </form>
+</div>
+

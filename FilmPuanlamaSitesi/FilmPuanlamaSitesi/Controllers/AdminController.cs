@@ -15,46 +15,45 @@ namespace FilmPuanlamaSitesi.Controllers
         [Authorize]
         public IActionResult Index()
         {
-            var degerler = c.Kullanicis.ToList();
+            var degerler = c.Admins.ToList();
             return View(degerler);
         }
 
         [HttpGet]
-        public IActionResult SignUp()
+        public IActionResult AddAdmin()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult SignUp(Kullanici k)
+        public IActionResult AddAdmin(Admin a)
         {
-            c.Kullanicis.Add(k);
+            c.Admins.Add(a);
             c.SaveChanges();
             return RedirectToAction("Index");
         }
 
         public IActionResult DeleteUser(int id)
         {
-            var b = c.Kullanicis.Find(id);
-            c.Kullanicis.Remove(b);
+            var b = c.Admins.Find(id);
+            c.Admins.Remove(b);
             c.SaveChanges();
             return RedirectToAction("Index");
         }
 
         public IActionResult Update(int id)
         {
-            var up = c.Kullanicis.Find(id);
+            var up = c.Admins.Find(id);
             return View("Update", up);
         }
 
-        public IActionResult UpdateUser(Kullanici k)
+        public IActionResult UpdateUser(Admin a)
         {
-            var upd = c.Kullanicis.Find(k.ID);
-            upd.ID = k.ID;
-            upd.KullaniciAd = k.KullaniciAd;
-            upd.Email = k.Email;
-            upd.Sifre = k.Sifre;
-            upd.Yetki = k.Yetki;
+            var upd = c.Admins.Find(a.ID);
+            upd.ID = a.ID;
+            upd.KullaniciAd = a.KullaniciAd;
+            upd.Email = a.Email;
+            upd.Sifre = a.Sifre;
             c.SaveChanges();
             return RedirectToAction("Index");
         }

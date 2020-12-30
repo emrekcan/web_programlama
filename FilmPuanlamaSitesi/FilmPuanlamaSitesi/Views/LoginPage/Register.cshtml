@@ -1,6 +1,6 @@
-﻿
+﻿@model FilmPuanlamaSitesi.Models.Siniflar.Kullanici
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Register";
     Layout = "~/Views/Shared/_LoginPageLayout.cshtml";
 }
 
@@ -12,9 +12,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Flat Tab Forms Widget Flat Responsive Widget Template :: w3layouts</title>
+    <title>REGISTER PAGE</title>
     <!-- Custom Theme files -->
-    <link href="~/login page/css/login.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/login page/css/user.css" rel="stylesheet" type="text/css" media="all" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -49,38 +49,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body>
     <!--header start here-->
-    <h1>ÜYE GİRİŞ EKRANI</h1>
+    <h1>SIGN UP PAGE</h1>
     <div class="header agile">
         <div class="headder-main w3layouts">
             <div class="login agileinfo">
                 <div class="sap_tabs">
-                    <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+                    <div id="horizontalTab" class="clearfix" style="display: block; width: 100%; margin: 0px;">
                         <ul class="resp-tabs-list w3">
                             <li class="resp-tab-item" id="create" aria-controls="tab_item-1" role="tab"><span>Sign Up</span></li>
-                            <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Sign In</span></li>
-
-                            <div class="clearfix"></div>
+                            <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>@Html.ActionLink("Sign In", "Login", "LoginPage")</span></li>
                         </ul>
                         <div class="resp-tabs-container w3-agile">
 
                             <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
                                 <div class="login-top wthree">
                                     <form action="#" method="post">
-                                        <h6>Name</h6>
-                                        <input type="text" placeholder="Name" name="Name" required="">
-                                        <h6>Email</h6>
+                                        <h6> @Html.LabelFor(x => x.KullaniciAd)</h6>
+                                        <input type="text" placeholder="Name" name="KullaniciAd" required="">
+                                        <h6>@Html.LabelFor(x => x.Email)</h6>
                                         <input type="text" class="email" placeholder="Email" name="Email">
-                                        <h6>Password</h6>
-                                        <input type="password" class="password" placeholder="Password" name="password">
-                                        <h6>Confirm Password</h6>
-                                        <input type="password" class="password confirm_password" placeholder="Confirm Password" name="password">
+                                        <h6>@Html.LabelFor(x => x.Sifre)</h6>
+                                        <input type="password" class="password" placeholder="Password" name="Sifre">
                                         <div class="login-bottom">
                                             <input type="submit" value="Sign Up">
                                             <div class="clear"></div>
                                         </div>
                                     </form>
                                 </div>
-
                             </div>
                             <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
                                 <div class="login-top">
@@ -94,7 +89,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                         </span>
                                         <div class="login-bottom login-bottom1 w3ls">
                                             <input type="submit" value="Sign In" />
-                                            <a href="#"><h4>Forgot Your Password?</a></h4>
+                                            <a href="#"><h4>Forgot Your Password?</h4></a>
                                             <div class="social-btn">
                                                 <a href="#" class="twitter">Sign In with Twitter</a>
                                                 <a href="#" class="facebook">Sign In with Facebook</a>

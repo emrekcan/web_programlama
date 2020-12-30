@@ -1,0 +1,34 @@
+﻿@using FilmPuanlamaSitesi.Models.Siniflar
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_KullaniciLayout.cshtml";
+}
+
+<div style="margin-right:980px; margin-top:150px;">
+
+</div>
+
+<table class="table table-bordered" style="margin-right:100px; width:auto; height:auto;">
+
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>E-MAIL</th>
+        <th>PASSWORD</th>
+        <th>BAN</th>
+        <th>UPDATE</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.ID</td>
+            <td>@x.KullaniciAd</td>
+            <td>@x.Email</td>
+            <td>@x.Sifre</td>
+            <td><a href="/Kullanici/DeleteUser/@x.ID" class="btn btn-warning">BAN</a></td>
+            <td><a href="/Kullanici/Update/@x.ID" class="btn btn-success">UPDATE</a></td>
+        </tr>
+    }
+</table>
+<a href="/Kullanici/AddUser" class="btn btn-primary">Add User</a>
+

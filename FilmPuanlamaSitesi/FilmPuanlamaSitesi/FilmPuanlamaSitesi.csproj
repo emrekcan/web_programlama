@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\LoginPage\UserIndex.cshtml" />
+    <Content Remove="Views\Shared\_UserLoginLayout.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\FilmSitesi\about.html" />
     <None Include="wwwroot\FilmSitesi\assets\css\style-starter.css" />
     <None Include="wwwroot\FilmSitesi\assets\fonts\fontawesome-webfont.eot" />

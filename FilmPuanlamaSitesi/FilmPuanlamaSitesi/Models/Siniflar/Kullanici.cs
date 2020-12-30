@@ -13,6 +13,5 @@ namespace FilmPuanlamaSitesi.Models.Siniflar
         public string KullaniciAd { get; set; }
         public string Sifre { get; set; }
         public string Email { get; set; }
-        public int Yetki { get; set; }
     }
 }

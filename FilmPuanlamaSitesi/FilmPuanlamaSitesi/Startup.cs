@@ -28,6 +28,7 @@ namespace FilmPuanlamaSitesi
         {
             services.AddControllersWithViews();
             //services.AddDbContext<Context>(optionsAction: options => options.UseSqlServer(Configuration.GetConnectionString(name: "DevConnection")));
+            services.AddMvc();
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
             .AddCookie(x => { x.LoginPath = "/LoginPage/Login/"; });
         }
@@ -35,6 +36,8 @@ namespace FilmPuanlamaSitesi
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseAuthentication();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -56,7 +59,7 @@ namespace FilmPuanlamaSitesi
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Film}/{action=Index}/{id?}");
+                    pattern: "{controller=LoginPage}/{action=Login}/{id?}");
             });
         }
     }

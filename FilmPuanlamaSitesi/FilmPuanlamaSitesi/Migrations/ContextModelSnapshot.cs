@@ -49,6 +49,9 @@ namespace FilmPuanlamaSitesi.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("KullaniciAd")
                         .HasColumnType("nvarchar(max)");
 
@@ -144,9 +147,6 @@ namespace FilmPuanlamaSitesi.Migrations
 
                     b.Property<string>("Sifre")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Yetki")
-                        .HasColumnType("int");
 
                     b.HasKey("ID");
 

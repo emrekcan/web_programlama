@@ -1,12 +1,11 @@
 ﻿@using FilmPuanlamaSitesi.Models.Siniflar
-@model List<Kullanici>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<div style="margin-right:880px; margin-top:100px;">
-    <h2>Users List</h2>
+<div style="margin-right:980px; margin-top:150px;">
+   
 </div>
 
 <table class="table table-bordered" style="margin-right:100px; width:auto; height:auto;">
@@ -16,9 +15,8 @@
         <th>NAME</th>
         <th>E-MAIL</th>
         <th>PASSWORD</th>
-        <th>YETKİ</th>
         <th>BAN</th>
-        <th>AUTHORITY</th>
+        <th>UPDATE</th>
     </tr>
     @foreach (var x in Model)
     {
@@ -27,10 +25,9 @@
     <td>@x.KullaniciAd</td>
     <td>@x.Email</td>
     <td>@x.Sifre</td>
-    <td>@x.Yetki</td>
     <td><a  href="/Admin/DeleteUser/@x.ID" class="btn btn-warning">BAN</a></td>
     <td><a href="/Admin/Update/@x.ID" class="btn btn-success">UPDATE</a></td>
 </tr>
     }
 </table>
-<a href="/Admin/SignUp" class="btn btn-primary">Add User</a>
+<a href="/Admin/AddAdmin" class="btn btn-primary">Add Admin</a>
