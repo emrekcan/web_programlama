@@ -1,0 +1,36 @@
+﻿@using FilmPuanlamaSitesi.Models.Siniflar
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="margin-right:980px; margin-top:150px;">
+
+</div>
+
+<table class="table table-bordered" style="margin-right:100px; width:auto; height:auto;">
+
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>SUBJECT</th>
+        <th>MAIL</th>
+        <th>PHONE NUMBER</th>
+        <th>MESSAGE</th>
+        <th>DELETE</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.ID</td>
+            <td>@x.Ad</td>
+            <td>@x.Konu</td>
+            <td>@x.Mail</td>
+            <td>@x.TelefonNumarasi</td>
+            <td>@x.Mesaj</td>
+            <td><a href="/AdminContact/DeleteContact/@x.ID" class="btn btn-warning">DELETE</a></td>
+        </tr>
+    }
+</table>
+
+

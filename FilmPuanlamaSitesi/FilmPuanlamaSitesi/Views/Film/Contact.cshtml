@@ -1,8 +1,7 @@
-﻿
-@{
-    ViewData["Title"] = "Contact";
-    Layout = "~/Views/Shared/_FilmLayout.cshtml";
-}
+﻿@using FilmPuanlamaSitesi.Models.Siniflar
+@model List<ContactUs>
+@{ ViewData["Title"] = "Contact";
+   Layout = "~/Views/Shared/_FilmLayout.cshtml"; }
 
 <!--
 Author: W3layouts
@@ -36,30 +35,31 @@ Author URL: http://w3layouts.com
                     <p class="hny-title mb-lg-5 mb-4">If you have a question regarding our services, feel free to contact us using the form below.</p>
                 </div>
                 <div class="contact-view mt-lg-5 mt-4">
-                    <div class="conhny-form-section">
-                        <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="formhny-sec">
+                    <div class="conhny-form-section ">
+                        <form method="post" class="formhny-sec">
                             <div class="form-grids">
                                 <div class="form-input">
-                                    <input type="text" name="w3lName" id="w3lName" placeholder="Enter your name *" required="" />
+                                    <input type="text" name="Ad" id="w3lName" placeholder="Enter your name *" required="" />
                                 </div>
                                 <div class="form-input">
-                                    <input type="text" name="w3lSubject" id="w3lSubject" placeholder="Enter subject " required />
+                                    <input type="text" name="Konu" id="w3lSubject" placeholder="Enter subject " required />
                                 </div>
                                 <div class="form-input">
-                                    <input type="email" name="w3lSender" id="w3lSender" placeholder="Enter your email *"
+                                    <input type="email" name="Mail" id="w3lSender" placeholder="Enter your email *"
                                            required />
                                 </div>
                                 <div class="form-input">
-                                    <input type="text" name="w3lPhone" id="w3lPhone" placeholder="Enter your Phone Number *"
+                                    <input type="text" name="TelefonNumarasi" id="w3lPhone" placeholder="Enter your Phone Number *"
                                            required />
                                 </div>
                             </div>
                             <div class="form-input mt-4">
-                                <textarea name="w3lMessage" id="w3lMessage" placeholder="Type your query here"
+                                <textarea name="Mesaj" id="w3lMessage" placeholder="Type your query here"
                                           required=""></textarea>
                             </div>
-                            <div class="submithny text-right mt-4">
-                                <button class="btn read-button">Submit Message</button>
+                            <div class="login-bottom">
+                                <input type="submit" value="Submit Message">
+                                <div class="clear"></div>
                             </div>
                         </form>
                     </div>
@@ -71,8 +71,14 @@ Author URL: http://w3layouts.com
                                     <span class="fa fa-location-arrow" aria-hidden="true"></span>
                                 </div>
                                 <div class="contact-details">
-                                    <h4>Address:</h4>
-                                    <p>SU İŞLERİ KEPEZ/ANTALYA</p>
+
+                                    @foreach (var x in Model)
+                                    {
+                                        if (@x.ID == 1)
+                                        {
+                                            <h4>@x.Baslik</h4>
+                                            <p>@x.Adres</p>}
+                                                        }
                                 </div>
                             </div>
                             <div class="contact-info">
@@ -80,9 +86,16 @@ Author URL: http://w3layouts.com
                                     <span class="fa fa-phone" aria-hidden="true"></span>
                                 </div>
                                 <div class="contact-details">
-                                    <h4>Phone:</h4>
-                                    <p><a href="tel:+90-555-5555">+90-555-5555</a></p>
-                                    <p><a href="tel:+90-544-4444">+90-544-4444</a></p>
+                                    
+                                    @foreach(var x in Model)
+                                    {
+                                        if (@x.ID == 2)
+                                        { 
+                                             <h4>@x.Baslik</h4>
+                                            <p>@x.Telefon</p>
+                                        }
+                                    }
+
                                 </div>
                             </div>
                             <div class="contact-info">
@@ -90,9 +103,14 @@ Author URL: http://w3layouts.com
                                     <span class="fa fa-envelope-open-o" aria-hidden="true"></span>
                                 </div>
                                 <div class="contact-details">
-                                    <h4>Mail:</h4>
-                                    <p><a href="mailto:mail@example.com" class="email">info@fragmanous.com</a></p>
-                                    <p><a href="mailto:mail@example.com" class="email">fragmanous@support.com</a></p>
+                                    @foreach (var x in Model)
+                                    {
+                                        if (@x.ID == 3)
+                                        {
+                                            <h4>@x.Baslik</h4>
+                                            <p>@x.Mail</p>}
+
+                                                                }
                                 </div>
                             </div>
                         </div>
@@ -100,7 +118,8 @@ Author URL: http://w3layouts.com
                 </div>
             </div>
         </div>
-        <div><iframe height="500" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Devlet%20Su%20%C4%B0%C5%9FleriBar%C4%B1%C5%9F,%2007080%20Kepez/Antalya+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/route-planner.htm"></a>
+        <div>
+            <iframe height="500" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Devlet%20Su%20%C4%B0%C5%9FleriBar%C4%B1%C5%9F,%2007080%20Kepez/Antalya+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/route-planner.htm"></a>
         </div>
     </section>
     <!-- /contact1 -->

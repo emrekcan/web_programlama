@@ -97,10 +97,10 @@ namespace FilmPuanlamaSitesi.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("Baslik")
+                    b.Property<string>("Adres")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Konum")
+                    b.Property<string>("Baslik")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Mail")
@@ -124,7 +124,19 @@ namespace FilmPuanlamaSitesi.Migrations
                     b.Property<string>("Baslik")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("FilmAd")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("FilmLink")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FilmResim")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Kategori")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Sure")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");

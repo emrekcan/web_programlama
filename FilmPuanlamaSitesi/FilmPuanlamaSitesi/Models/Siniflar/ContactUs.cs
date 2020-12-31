@@ -13,6 +13,6 @@ namespace FilmPuanlamaSitesi.Models.Siniflar
         public string Baslik { get; set; }
         public string Mail { get; set; }
         public string Telefon { get; set; }
-        public string Konum { get; set; }
+        public string Adres { get; set; }
     }
 }

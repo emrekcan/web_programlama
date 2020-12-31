@@ -1,0 +1,40 @@
+﻿@model FilmPuanlamaSitesi.Models.Siniflar.Genre
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="margin-right:750px; margin-top:100px;">
+    <br />
+    @using (Html.BeginForm("UpdateGenre", "AdminGenre", FormMethod.Post))
+    {
+        @Html.LabelFor(x => x.ID)
+        <br />
+        @Html.TextBoxFor(x => x.ID, new { @readonly = "readonly" })
+        <br />
+        @Html.LabelFor(x => x.Baslik)
+        <br />
+        @Html.TextBoxFor(x => x.Baslik)
+        <br />
+        @Html.LabelFor(x => x.FilmLink)
+        <br />
+        @Html.TextBoxFor(x => x.FilmLink)
+        <br />
+        @Html.LabelFor(x => x.Kategori)
+        <br />
+        @Html.TextBoxFor(x => x.Kategori)
+        <br />
+        @Html.LabelFor(x => x.Sure)
+        <br />
+        @Html.TextBoxFor(x => x.Sure)
+        <br />
+        @Html.LabelFor(x => x.FilmResim)
+        <br />
+        @Html.TextBoxFor(x => x.FilmResim)
+        <br />
+        <div style="margin-top:10px;">
+            <button class="btn btn-primary">UPDATE</button>
+        </div>
+    }
+</div>
+

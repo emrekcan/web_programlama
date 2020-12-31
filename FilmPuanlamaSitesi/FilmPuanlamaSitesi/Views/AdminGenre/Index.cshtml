@@ -1,0 +1,36 @@
+﻿@using FilmPuanlamaSitesi.Models.Siniflar
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="margin-right:980px; margin-top:150px;">
+
+</div>
+
+<table class="table table-bordered" style="margin-right:100px; width:auto; height:auto;">
+
+    <tr>
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>FILM LINK</th>
+        <th>UPDATE</th>
+        <th>CATEGORY</th>
+        <th>TIME</th>
+        <th>FILM IMAGE</th>
+        <th>UPDATE</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.ID</td>
+            <td>@x.Baslik</td>
+            <td>@x.FilmLink</td>
+            <td>@x.FilmAd</td>
+            <td>@x.Kategori</td>
+            <td>@x.Sure</td>
+            <td>@x.FilmResim</td>
+            <td><a href="/AdminGenre/Update/@x.ID" class="btn btn-success">UPDATE</a></td>
+        </tr>
+    }
+</table>

@@ -14,7 +14,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
     <title>LOGIN PAGE</title>
     <!-- Custom Theme files -->
-    <link href="~/login page/css/user.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/login page/css/users.css" rel="stylesheet" type="text/css" media="all" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -52,13 +52,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <h1>LOGIN PAGE</h1>
     <div class="header agile">
         <div class="headder-main w3layouts">
-            <div class="login agileinfo">
+            <div class="login agileinfo"> 
                 <div class="sap_tabs">
-                    <div id="horizontalTab" class="clearfix" style="display: block; width: 100%; margin: 0px;">
+                    <div id="horizontalTab" class="login-bottom login-bottom1 w3ls" style="display: block; width: 100%; margin: 0px;">
                         <ul class="resp-tabs-list w3">
                             <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Sign In</span></li>
-                            <li class="resp-tab-item" id="create" aria-controls="tab_item-1" role="tab"><span>@Html.ActionLink("SignUp", "Register", "LoginPage")</span></li>
-                            
                         </ul>
                         <div class="resp-tabs-container w3-agile">
                             <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
@@ -73,11 +71,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                         </span>
                                         <div class="login-bottom login-bottom1 w3ls">
                                             <input type="submit" value="Sign In" />
-                                            <a href="#"><h4>Forgot Your Password?</h4></a>
-                                            <div class="social-btn">
-                                                <a href="#" class="twitter">Sign In with Twitter</a>
-                                                <a href="#" class="facebook">Sign In with Facebook</a>
-                                            </div>
+                                            Don't have an account?<br /><a href="/LoginPage/Register"><b style="color:#0026ff; font-size:20px;">SIGN UP</b></a>
                                         </div>
                                     </form>
                                 </div>
@@ -91,8 +85,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                         <input type="text" class="email" placeholder="Email" name="Email">
                                         <h6>Password</h6>
                                         <input type="password" class="password" placeholder="Password" name="password">
-                                        <h6>Confirm Password</h6>
-                                        <input type="password" class="password confirm_password" placeholder="Confirm Password" name="password">
                                         <div class="login-bottom">
                                             <input type="submit" value="Sign Up">
                                             <div class="clear"></div>

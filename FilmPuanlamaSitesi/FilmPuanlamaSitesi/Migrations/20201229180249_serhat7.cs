@@ -7,8 +7,8 @@ namespace FilmPuanlamaSitesi.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
-                name: "Email",
-                table: "Admins",
+                name: "Adres",
+                table: "ContactUses",
                 type: "nvarchar(max)",
                 nullable: true);
         }
@@ -16,8 +16,8 @@ namespace FilmPuanlamaSitesi.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "Email",
-                table: "Admins");
+                name: "Adres",
+                table: "ContactUses");
         }
     }
 }

@@ -10,6 +10,7 @@ namespace FilmPuanlamaSitesi.Controllers
 {
     public class FilmController : Controller
     {
+        Context c = new Context();
         public IActionResult Index()
         {
             return View();
@@ -18,13 +19,21 @@ namespace FilmPuanlamaSitesi.Controllers
         {
             return View();
         }
-        public IActionResult Genre()
-        {
-            return View();
-        }
+        
+        [HttpGet]
         public IActionResult Contact()
         {
-            return View();
+            var degerler = c.ContactUses.ToList();
+            return View(degerler);
+        }
+
+        [HttpPost]
+        public IActionResult Contact(Contact t)
+        {
+                c.Contacts.Add(t);
+                c.SaveChanges();
+                return RedirectToAction("Contact");
+            
         }
     }
 }

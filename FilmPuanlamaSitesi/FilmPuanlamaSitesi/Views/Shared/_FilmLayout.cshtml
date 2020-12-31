@@ -67,56 +67,54 @@ Author URL: http://w3layouts.com
                         </li>
                     </ul>
                     <div style="margin-bottom:5px; margin-top:5px;">
-                        <button type="button" class="btn btn-info">
-                            <div><h5>@Html.ActionLink("Logout", "Login", "LoginPage")</h5></div>
-                        </button>
+                            @Html.ActionLink("Logout", "Login", "LoginPage", null, new { @class = "btn btn-info btn-large" })
                     </div>
-                    <!--/search-right-->
-                    <!--/search-right-->
-                    <div class="search-right">
-                        <a href="#search" class="btn search-hny mr-lg-3 mt-lg-0 mt-4" title="search">
-                            Search <span class="fa fa-search ml-3" aria-hidden="true"></span>
-                        </a>
-                        <!-- search popup -->
-                        <div id="search" class="pop-overlay">
-                            <div class="popup">
-                                <form action="#" method="post" class="search-box">
-                                    <input type="search" style="background-color:white; color:orangered; font-size:30px;"
-                                           placeholder="Search your Keyword" name="search" required="required" autofocus="">
-                                    <button type="submit" class="btn">
-                                        <span class="fa fa-search"
-                                              aria-hidden="true"></span>
-                                    </button>
-                                </form>
-                                <div class="browse-items">
-                                    <h3 class="hny-title two mt-md-5 mt-4">Browse all:</h3>
-                                    <ul class="search-items">
-                                        <li>@Html.ActionLink("Action", "Genre", "Film")</li>
-                                        <li>@Html.ActionLink("Drama", "Genre", "Film")</li>
-                                        <li>@Html.ActionLink("Family", "Genre", "Film")</li>
-                                        <li>@Html.ActionLink("Thriller", "Genre", "Film")</li>
-                                        <li>@Html.ActionLink("Comedy", "Genre", "Film")</li>
-                                        <li>@Html.ActionLink("Romantic", "Genre", "Film")</li>
-                                        <li>@Html.ActionLink("TV Series", "Genre", "Film")</li>
-                                        <li>@Html.ActionLink("Horror", "Genre", "Film")</li>
-                                        <li>@Html.ActionLink("Crime", "Genre", "Film")</li>
-                                        <li>@Html.ActionLink("Documentary", "Genre", "Film")</li>
-                                        <li>@Html.ActionLink("Turkish Cinema", "Genre", "Film")</li>
-                                        <li>@Html.ActionLink("Adventure", "Genre", "Film")</li>
-                                        <li>@Html.ActionLink("Fantasy", "Genre", "Film")</li>
-                                        <li>@Html.ActionLink("Historical", "Genre", "Film")</li>
-                                        <li>@Html.ActionLink("Science fiction", "Genre", "Film")</li>
-                                    </ul>
+                            <!--/search-right-->
+                            <!--/search-right-->
+                            <div class="search-right">
+                                <a href="#search" class="btn search-hny mr-lg-3 mt-lg-0 mt-4" title="search">
+                                    Search <span class="fa fa-search ml-3" aria-hidden="true"></span>
+                                </a>
+                                <!-- search popup -->
+                                <div id="search" class="pop-overlay">
+                                    <div class="popup">
+                                        <form action="#" method="post" class="search-box">
+                                            <input type="search" style="background-color:white; color:orangered; font-size:30px;"
+                                                   placeholder="Search your Keyword" name="search" required="required" autofocus="">
+                                            <button type="submit" class="btn">
+                                                <span class="fa fa-search"
+                                                      aria-hidden="true"></span>
+                                            </button>
+                                        </form>
+                                        <div class="browse-items">
+                                            <h3 class="hny-title two mt-md-5 mt-4">Browse all:</h3>
+                                            <ul class="search-items">
+                                                <li>@Html.ActionLink("Action", "Genre", "Film")</li>
+                                                <li>@Html.ActionLink("Drama", "Genre", "Film")</li>
+                                                <li>@Html.ActionLink("Family", "Genre", "Film")</li>
+                                                <li>@Html.ActionLink("Thriller", "Genre", "Film")</li>
+                                                <li>@Html.ActionLink("Comedy", "Genre", "Film")</li>
+                                                <li>@Html.ActionLink("Romantic", "Genre", "Film")</li>
+                                                <li>@Html.ActionLink("TV Series", "Genre", "Film")</li>
+                                                <li>@Html.ActionLink("Horror", "Genre", "Film")</li>
+                                                <li>@Html.ActionLink("Crime", "Genre", "Film")</li>
+                                                <li>@Html.ActionLink("Documentary", "Genre", "Film")</li>
+                                                <li>@Html.ActionLink("Turkish Cinema", "Genre", "Film")</li>
+                                                <li>@Html.ActionLink("Adventure", "Genre", "Film")</li>
+                                                <li>@Html.ActionLink("Fantasy", "Genre", "Film")</li>
+                                                <li>@Html.ActionLink("Historical", "Genre", "Film")</li>
+                                                <li>@Html.ActionLink("Science fiction", "Genre", "Film")</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a class="close" href="#close">×</a>
                                 </div>
+                                <!-- /search popup -->
+                                <!--/search-right-->
                             </div>
-                            <a class="close" href="#close">×</a>
-                        </div>
-                        <!-- /search popup -->
-                        <!--/search-right-->
-                    </div>
 
 
-                </div>
+</div>
                 <!-- toggle switch for light and dark theme -->
                 <div class="mobile-position">
                     <nav class="navigation">
