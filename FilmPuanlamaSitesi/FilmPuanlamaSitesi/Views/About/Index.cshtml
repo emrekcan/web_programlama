@@ -1,8 +1,8 @@
 ﻿@using FilmPuanlamaSitesi.Models.Siniflar
 @model List<About>
-@{ 
-   ViewData["Title"] = "About";
-   Layout = "~/Views/Shared/_FilmLayout.cshtml"; 
+@{
+    ViewData["Title"] = "About";
+    Layout = "~/Views/Shared/_FilmLayout.cshtml";
 }
 <!--
 Author: W3layouts
@@ -16,6 +16,7 @@ Author URL: http://w3layouts.com
 </head>
 <html lang="zxx">
 <body>
+
     <!--/breadcrumbs -->
     <div class="w3l-breadcrumbs">
         <nav id="breadcrumbs" class="breadcrumbs">
@@ -33,20 +34,17 @@ Author URL: http://w3layouts.com
                     <img class="img-fluid" src="~/FilmSitesi/assets/images/banner1.jpg">
                 </div>
                 <div class="col-lg-6 ab-left pl-lg-4 mt-lg-0 mt-5">
-                    
-                    @foreach(var x in Model)
+
+                    @foreach (var x in Model)
                     {
-                        if (@x.ID==1)
-                        { 
+                        if (@x.ID == 1)
+                        {
                             <h3 class="hny-title">@x.Baslik</h3>
-                            <p class="mt-3">
-                                 @x.Aciklama
+                            <p class="mt-3" style="font-size:20px;">
+                                @x.Aciklama
                             </p>
                         }
                     }
-                    <div class="ready-more mt-4">
-                        <a href="#" class="btn read-button">Read More <span class="fa fa-angle-double-right ml-2" aria-hidden="true"></span></a>
-                    </div>
                 </div>
             </div>
 
@@ -60,8 +58,8 @@ Author URL: http://w3layouts.com
                                 {
                                     <p class="counter">@x.Istatistik</p>
                                     <h4>@x.Baslik</h4>
-                                 }
-                             }
+                                }
+                            }
 
                         </div>
                     </div>
@@ -77,7 +75,7 @@ Author URL: http://w3layouts.com
                                     <p class="counter">@x.Istatistik</p>
                                     <h4>@x.Baslik</h4>
                                 }
-                             }
+                            }
 
                         </div>
                     </div>
@@ -93,7 +91,7 @@ Author URL: http://w3layouts.com
                                     <p class="counter">@x.Istatistik</p>
                                     <h4>@x.Baslik</h4>
                                 }
-                             }
+                            }
                         </div>
                     </div>
                 </div>
@@ -108,7 +106,7 @@ Author URL: http://w3layouts.com
                                     <p class="counter">@x.Istatistik</p>
                                     <h4>@x.Baslik</h4>
                                 }
-                             }
+                            }
                         </div>
                     </div>
                 </div>
@@ -129,7 +127,7 @@ Author URL: http://w3layouts.com
                         {
                             <h3 class="hny-title">@x.Baslik</h3>
                         }
-                     }
+                    }
 
                 </div>
                 <div class="owl-team owl-carousel owl-theme">
@@ -140,12 +138,6 @@ Author URL: http://w3layouts.com
                             </div>
                             <div class="column text-center">
                                 <h3 class="name-pos"><a href="#url">Dwayne johnson</a></h3>
-
-                                <div class="social">
-                                    <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                                    <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                                    <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-                                </div>
                             </div>
                         </div>
 
@@ -158,12 +150,6 @@ Author URL: http://w3layouts.com
                                 </div>
                                 <div class="column text-center">
                                     <h3 class="name-pos"><a href="#url">Karen Gillan</a></h3>
-
-                                    <div class="social">
-                                        <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                                        <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                                        <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -177,12 +163,6 @@ Author URL: http://w3layouts.com
                                 </div>
                                 <div class="column text-center">
                                     <h3 class="name-pos"><a href="#url">Chris Hemsworth</a></h3>
-
-                                    <div class="social">
-                                        <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                                        <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                                        <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -196,12 +176,6 @@ Author URL: http://w3layouts.com
                                 </div>
                                 <div class="column text-center">
                                     <h3 class="name-pos"><a href="#url">Elton John</a></h3>
-
-                                    <div class="social">
-                                        <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                                        <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                                        <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -215,11 +189,6 @@ Author URL: http://w3layouts.com
                                 </div>
                                 <div class="column text-center">
                                     <h3 class="name-pos"><a href="#url">Liu Yifei</a></h3>
-                                    <div class="social">
-                                        <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                                        <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                                        <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -233,12 +202,6 @@ Author URL: http://w3layouts.com
                                 </div>
                                 <div class="column text-center">
                                     <h3 class="name-pos"><a href="#url">Chris Hemsworth</a></h3>
-
-                                    <div class="social">
-                                        <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
-                                        <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-                                        <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -263,7 +226,7 @@ Author URL: http://w3layouts.com
                             <h3 class="hny-title">@x.Baslik</h3>
                         }
                     }
-                   
+
                 </div>
                 <!-- /grids -->
                 <div class="testimonial-width">
@@ -273,8 +236,7 @@ Author URL: http://w3layouts.com
                                 <div class="testimonial">
                                     <blockquote>
                                         <q>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                                            voluptate rem ullam dolore!.
+                                            I liked the site very much. I would recommend it to everyone.
                                         </q>
                                     </blockquote>
                                     <div class="testi-des">
@@ -282,8 +244,8 @@ Author URL: http://w3layouts.com
                                             <img src="~/FilmSitesi/assets/images/team1.jpg" class="img-fluid" alt="/">
                                         </div>
                                         <div class="peopl align-self">
-                                            <h3>Johnson smith</h3>
-                                            <p class="indentity">Washington</p>
+                                            <h3>Jenny smith</h3>
+                                            <p class="indentity">London</p>
                                         </div>
                                     </div>
                                 </div>
@@ -294,8 +256,7 @@ Author URL: http://w3layouts.com
                                 <div class="testimonial">
                                     <blockquote>
                                         <q>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                                            voluptate rem ullam dolore!.
+                                            The site is really great, buddy. Just enter the site and enjoy.
                                         </q>
                                     </blockquote>
                                     <div class="testi-des">
@@ -315,8 +276,7 @@ Author URL: http://w3layouts.com
                                 <div class="testimonial">
                                     <blockquote>
                                         <q>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                                            voluptate rem ullam dolore!.
+                                            Visit this site so you don't miss the new trailers. This site is awesome.
                                         </q>
                                     </blockquote>
                                     <div class="testi-des">
@@ -324,8 +284,8 @@ Author URL: http://w3layouts.com
                                             <img src="~/FilmSitesi/assets/images/team3.jpg" class="img-fluid" alt="/">
                                         </div>
                                         <div class="peopl align-self">
-                                            <h3>Roy Linderson</h3>
-                                            <p class="indentity">Washington</p>
+                                            <h3>Emel Öz</h3>
+                                            <p class="indentity">Antalya</p>
                                         </div>
                                     </div>
                                 </div>
@@ -336,8 +296,7 @@ Author URL: http://w3layouts.com
                                 <div class="testimonial">
                                     <blockquote>
                                         <q>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                                            voluptate rem ullam dolore!.
+                                            You must definitely investigation the site. Really amazing.
                                         </q>
                                     </blockquote>
                                     <div class="testi-des">
@@ -345,8 +304,8 @@ Author URL: http://w3layouts.com
                                             <img src="~/FilmSitesi/assets/images/team4.jpg" class="img-fluid" alt="/">
                                         </div>
                                         <div class="peopl align-self">
-                                            <h3>Mike Thyson</h3>
-                                            <p class="indentity">Washington</p>
+                                            <h3>Mike Green</h3>
+                                            <p class="indentity">Tokyo</p>
                                         </div>
                                     </div>
                                 </div>
@@ -357,8 +316,7 @@ Author URL: http://w3layouts.com
                                 <div class="testimonial">
                                     <blockquote>
                                         <q>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                                            voluptate rem ullam dolore!.
+                                            This site is great. Come on now and start watching.
                                         </q>
                                     </blockquote>
                                     <div class="testi-des">
@@ -367,7 +325,7 @@ Author URL: http://w3layouts.com
                                         </div>
                                         <div class="peopl align-self">
                                             <h3>Laura gill</h3>
-                                            <p class="indentity">Washington</p>
+                                            <p class="indentity">Madrid</p>
                                         </div>
                                     </div>
                                 </div>
@@ -378,8 +336,7 @@ Author URL: http://w3layouts.com
                                 <div class="testimonial">
                                     <blockquote>
                                         <q>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                                            voluptate rem ullam dolore!.
+                                            Come to this site and start watching. Fragmanous is a great site.
                                         </q>
                                     </blockquote>
                                     <div class="testi-des">
@@ -387,8 +344,8 @@ Author URL: http://w3layouts.com
                                             <img src="~/FilmSitesi/assets/images/team3.jpg" class="img-fluid" alt="/">
                                         </div>
                                         <div class="peopl align-self">
-                                            <h3>Smith Johnson</h3>
-                                            <p class="indentity">Washington</p>
+                                            <h3>Smith Wooden</h3>
+                                            <p class="indentity">Paris</p>
                                         </div>
                                     </div>
                                 </div>
@@ -401,191 +358,6 @@ Author URL: http://w3layouts.com
         </div>
         <!-- //grids -->
     </section>
-    <!--//testimonials-->
-    <!--grids-sec2-->
-    <section class="w3l-grids">
-        <div class="grids-main py-5">
-            <div class="container py-lg-4">
-                <div class="headerhny-title">
-                    <div class="w3l-title-grids">
-                        <div class="headerhny-left">
-                            @foreach (var x in Model)
-                            {
-                                if (@x.ID == 8)
-                                {
-                                    <h3 class="hny-title">@x.Baslik</h3>
-                                }
-                            }
-                        </div>
-                        <div class="headerhny-right text-lg-right">
-                            <h4><a class="show-title" href="genre.html">Show all</a></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="owl-three owl-carousel owl-theme">
-                    <div class="item vhny-grid">
-                        <div class="box16">
-                            <a href="genre.html">
-                                <figure>
-                                    <img class="img-fluid" src="~/FilmSitesi/assets/images/m12.jpg" alt="">
-                                </figure>
-                                <div class="box-content">
-                                    <h4>
-                                        <span class="post">
-                                            <span class="fa fa-clock-o"> </span> 2 Hr 4min
-
-                                        </span>
-
-                                        <span class="post fa fa-heart text-right"></span>
-                                    </h4>
-                                </div>
-                                <span class="fa fa-play video-icon" aria-hidden="true"></span>
-                            </a>
-                        </div>
-                        <h3> <a class="title-gd" href="genre.html">The Hustle</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <div class="button-center text-center mt-4">
-                            <a href="genre.html" class="btn watch-button">Watch now</a>
-                        </div>
-
-                    </div>
-                    <div class="item vhny-grid">
-                        <div class="box16">
-                            <a href="genre.html">
-                                <figure>
-                                    <img class="img-fluid" src="~/FilmSitesi/assets/images/m11.jpg" alt="">
-                                </figure>
-                                <div class="box-content">
-
-                                    <h4>
-                                        <span class="post">
-                                            <span class="fa fa-clock-o"> </span> 2 Hr 4min
-
-                                        </span>
-
-                                        <span class="post fa fa-heart text-right"></span>
-                                    </h4>
-                                </div>
-                                <span class="fa fa-play video-icon" aria-hidden="true"></span>
-                            </a>
-                        </div>
-                        <h3> <a class="title-gd" href="genre.html">The Lego</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <div class="button-center text-center mt-4">
-                            <a href="genre.html" class="btn watch-button">Watch now</a>
-                        </div>
-                    </div>
-                    <div class="item vhny-grid">
-                        <div class="box16">
-                            <a href="genre.html">
-                                <figure>
-                                    <img class="img-fluid" src="~/FilmSitesi/assets/images/m9.jpg" alt="">
-                                </figure>
-                                <div class="box-content">
-
-                                    <h4>
-                                        <span class="post">
-                                            <span class="fa fa-clock-o"> </span> 2 Hr 4min
-
-                                        </span>
-
-                                        <span class="post fa fa-heart text-right"></span>
-                                    </h4>
-                                </div>
-                                <span class="fa fa-play video-icon" aria-hidden="true"></span>
-                            </a>
-                        </div>
-                        <h3> <a class="title-gd" href="genre.html">Joker </a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <div class="button-center text-center mt-4">
-                            <a href="genre.html" class="btn watch-button">Watch now</a>
-                        </div>
-                    </div>
-                    <div class="item vhny-grid">
-                        <div class="box16">
-                            <a href="genre.html">
-                                <figure>
-                                    <img class="img-fluid" src="~/FilmSitesi/assets/images/m8.jpg" alt="">
-                                </figure>
-                                <div class="box-content">
-
-                                    <h4>
-                                        <span class="post">
-                                            <span class="fa fa-clock-o"> </span> 2 Hr 4min
-
-                                        </span>
-
-                                        <span class="post fa fa-heart text-right"></span>
-                                    </h4>
-                                </div>
-                                <span class="fa fa-play video-icon" aria-hidden="true"></span>
-                            </a>
-                        </div>
-                        <h3> <a class="title-gd" href="genre.html">Toy story 4</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <div class="button-center text-center mt-4">
-                            <a href="genre.html" class="btn watch-button">Watch now</a>
-                        </div>
-
-                    </div>
-                    <div class="item vhny-grid">
-                        <div class="box16">
-                            <a href="genre.html">
-                                <figure>
-                                    <img class="img-fluid" src="~/FilmSitesi/assets/images/m1.jpg" alt="">
-                                </figure>
-                                <div class="box-content">
-
-                                    <h4>
-                                        <span class="post">
-                                            <span class="fa fa-clock-o"> </span> 2 Hr 4min
-
-                                        </span>
-
-                                        <span class="post fa fa-heart text-right"></span>
-                                    </h4>
-                                </div>
-                                <span class="fa fa-play video-icon" aria-hidden="true"></span>
-                            </a>
-                        </div>
-                        <h3> <a class="title-gd" href="genre.html">Rocketman</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <div class="button-center text-center mt-4">
-                            <a href="genre.html" class="btn watch-button">Watch now</a>
-                        </div>
-                    </div>
-                    <div class="item vhny-grid">
-                        <div class="box16">
-                            <a href="genre.html">
-                                <figure>
-                                    <img class="img-fluid" src="~/FilmSitesi/assets/images/m2.jpg" alt="">
-                                </figure>
-                                <div class="box-content">
-
-                                    <h4>
-                                        <span class="post">
-                                            <span class="fa fa-clock-o"> </span> 2 Hr 4min
-
-                                        </span>
-
-                                        <span class="post fa fa-heart text-right"></span>
-                                    </h4>
-                                </div>
-                                <span class="fa fa-play video-icon" aria-hidden="true"></span>
-                            </a>
-                        </div>
-                        <h3> <a class="title-gd" href="genre.html">Doctor Sleep</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                        <div class="button-center text-center mt-4">
-                            <a href="genre.html" class="btn watch-button">Watch now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!--grids-sec2-->
 </body>
 
 </html>
@@ -600,123 +372,128 @@ Author URL: http://w3layouts.com
 <!-- //theme-change-->
 <script src="~/FilmSitesi/assets/js/owl.carousel.js"></script>
 <!-- script for banner slider-->
-<script>$(document).ready(function () {
-		$('.owl-team').owlCarousel({
-			loop: true,
-			margin: 20,
-			nav: false,
-			responsiveClass: true,
-			autoplay: false,
-			autoplayTimeout: 5000,
-			autoplaySpeed: 1000,
-			autoplayHoverPause: false,
-			responsive: {
-				0: {
-					items:2,
-					nav: false
-				},
-				480: {
-					items: 2,
-					nav: true
-				},
-				667: {
-					items: 3,
-					nav: true
-				},
-				1000: {
-					items:4,
-					nav: true
-				}
-			}
-		})
-	})</script>
-<script>$(document).ready(function () {
-		$('.owl-three').owlCarousel({
-			loop: true,
-			margin: 20,
-			nav: false,
-			responsiveClass: true,
-			autoplay:true,
-			autoplayTimeout: 5000,
-			autoplaySpeed: 1000,
-			autoplayHoverPause: false,
-			responsive: {
-				0: {
-					items: 2,
-					nav: false
-				},
-				480: {
-					items: 2,
-					nav: true
-				},
-				667: {
-					items: 3,
-					nav: true
-				},
-				1000: {
-					items: 6,
-					nav: true
-				}
-			}
-		})
-	})</script>
+<script>
+    $(document).ready(function () {
+        $('.owl-team').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            responsiveClass: true,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1000,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: false
+                },
+                480: {
+                    items: 2,
+                    nav: true
+                },
+                667: {
+                    items: 3,
+                    nav: true
+                },
+                1000: {
+                    items: 4,
+                    nav: true
+                }
+            }
+        })
+    })</script>
+<script>
+    $(document).ready(function () {
+        $('.owl-three').owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            responsiveClass: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1000,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: false
+                },
+                480: {
+                    items: 2,
+                    nav: true
+                },
+                667: {
+                    items: 3,
+                    nav: true
+                },
+                1000: {
+                    items: 6,
+                    nav: true
+                }
+            }
+        })
+    })</script>
 <!-- //script -->
 <!-- for tesimonials carousel slider -->
-<script>$(document).ready(function () {
-		$(".owl-clients").owlCarousel({
-			loop: true,
-			margin:40,
-			responsiveClass: true,
-			responsive: {
-				0: {
-					items:1,
-					nav: true
-				},
-				736: {
-					items: 2,
-					nav: false
-				},
-				1000: {
-					items:3,
-					nav: true,
-					loop: false
-				}
-			}
-		})
-	})</script>
+<script>
+    $(document).ready(function () {
+        $(".owl-clients").owlCarousel({
+            loop: true,
+            margin: 40,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                736: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+    })</script>
 <!-- //script -->
 <!-- script for owlcarousel -->
 <!-- disable body scroll which navbar is in active -->
-<script>$(function () {
-		$('.navbar-toggler').click(function () {
-			$('body').toggleClass('noscroll');
-		})
-	});</script>
+<script>
+    $(function () {
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
+    });</script>
 <!-- disable body scroll which navbar is in active -->
 <!--/MENU-JS-->
-<script>$(window).on("scroll", function () {
-		var scroll = $(window).scrollTop();
+<script>
+    $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
 
-		if (scroll >= 80) {
-			$("#site-header").addClass("nav-fixed");
-		} else {
-			$("#site-header").removeClass("nav-fixed");
-		}
-	});
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
+    });
 
-	//Main navigation Active Class Add Remove
-	$(".navbar-toggler").on("click", function () {
-		$("header").toggleClass("active");
-	});
-	$(document).on("ready", function () {
-		if ($(window).width() > 991) {
-			$("header").removeClass("active");
-		}
-		$(window).on("resize", function () {
-			if ($(window).width() > 991) {
-				$("header").removeClass("active");
-			}
-		});
-	});</script>
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+            $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
+    });</script>
 <!--//MENU-JS-->
 <script src="~/FilmSitesi/assets/js/bootstrap.min.js"></script>

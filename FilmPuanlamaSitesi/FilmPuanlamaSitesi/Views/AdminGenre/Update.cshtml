@@ -4,37 +4,37 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<div style="margin-right:750px; margin-top:100px;">
+<div style="margin-right:750px; margin-top:100px; color:aqua;">
     <br />
     @using (Html.BeginForm("UpdateGenre", "AdminGenre", FormMethod.Post))
     {
-        @Html.LabelFor(x => x.ID)
+        <label>ID</label>
         <br />
-        @Html.TextBoxFor(x => x.ID, new { @readonly = "readonly" })
+        @Html.TextBoxFor(x => x.ID, new { @class = "form-control", @readonly = "readonly" })
         <br />
-        @Html.LabelFor(x => x.Baslik)
+        <label>Başlık</label>
         <br />
-        @Html.TextBoxFor(x => x.Baslik)
+        @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
         <br />
-        @Html.LabelFor(x => x.FilmAd)
+        <label>Film Adı</label>
         <br />
-        @Html.TextBoxFor(x => x.FilmAd)
+        @Html.TextBoxFor(x => x.FilmAd, new { @class = "form-control" })
         <br />
-        @Html.LabelFor(x => x.FilmLink)
+        <label>Film Linki</label>
         <br />
-        @Html.TextBoxFor(x => x.FilmLink)
+        @Html.TextBoxFor(x => x.FilmLink, new { @class = "form-control" })
         <br />
-        @Html.LabelFor(x => x.Kategori)
+        <label>Kategori</label>
         <br />
-        @Html.TextBoxFor(x => x.Kategori)
+        @Html.TextBoxFor(x => x.Kategori, new { @class = "form-control" })
         <br />
-        @Html.LabelFor(x => x.Sure)
+        <label>Süre</label>
         <br />
-        @Html.TextBoxFor(x => x.Sure)
+        @Html.TextBoxFor(x => x.Sure, new { @class = "form-control" })
         <br />
-        @Html.LabelFor(x => x.FilmResim)
+        <label>Film Resmi</label>
         <br />
-        @Html.TextBoxFor(x => x.FilmResim)
+        @Html.TextBoxFor(x => x.FilmResim, new { @class = "form-control" })
         <br />
         <div style="margin-top:10px;">
             <button class="btn btn-primary">UPDATE</button>

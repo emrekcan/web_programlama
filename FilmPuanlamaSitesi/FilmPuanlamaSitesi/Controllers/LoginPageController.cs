@@ -1,6 +1,7 @@
 ﻿
 using FilmPuanlamaSitesi.Models.Siniflar;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,6 @@ namespace FilmPuanlamaSitesi.Controllers
     {
         Context c = new Context();
 
-
         [HttpGet]
         public IActionResult Login()
         {   
@@ -26,7 +26,7 @@ namespace FilmPuanlamaSitesi.Controllers
         public async Task<IActionResult> Login(Kullanici k)
         {
             var bilgiler = c.Kullanicis.FirstOrDefault(x => x.Email == k.Email && x.Sifre == k.Sifre);
-            
+
             if (bilgiler != null)
             {
                 var claims = new List<Claim>
@@ -38,10 +38,12 @@ namespace FilmPuanlamaSitesi.Controllers
                 await HttpContext.SignInAsync(principal);
                 return RedirectToAction("Index", "Film");
             }
-            
-             return View();
-            
-            
+            else
+            {
+                ModelState.AddModelError("", "Invalid login attempt");
+                return View(); 
+            }
+                
         }
 
         [HttpGet]
@@ -58,5 +60,10 @@ namespace FilmPuanlamaSitesi.Controllers
             return RedirectToAction("Login");
         }
 
+        public async Task<IActionResult> LogOut()
+        {
+            await HttpContext.SignOutAsync();
+            return RedirectToAction("Login", "LoginPage");
+        }
     }
 }

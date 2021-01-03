@@ -1,4 +1,5 @@
 ﻿using FilmPuanlamaSitesi.Models.Siniflar;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,8 @@ namespace FilmPuanlamaSitesi.Controllers
     public class AdminGenreController : Controller
     {
         Context c = new Context();
+
+        [Authorize]
         public IActionResult Index()
         {
             var degerler = c.Genres.ToList();
@@ -24,6 +27,10 @@ namespace FilmPuanlamaSitesi.Controllers
 
         public IActionResult UpdateGenre(Genre g)
         {
+            if (!ModelState.IsValid)
+            {
+                return View("Update");
+            }
             var gen = c.Genres.Find(g.ID);
             gen.ID = g.ID;
             gen.Baslik = g.Baslik;

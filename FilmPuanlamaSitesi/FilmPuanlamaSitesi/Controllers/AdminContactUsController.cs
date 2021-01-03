@@ -1,4 +1,5 @@
 ﻿using FilmPuanlamaSitesi.Models.Siniflar;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,8 @@ namespace FilmPuanlamaSitesi.Controllers
     public class AdminContactUsController : Controller
     {
         Context d = new Context();
+
+        [Authorize]
         public IActionResult Index()
         {
             var degerler = d.ContactUses.ToList();

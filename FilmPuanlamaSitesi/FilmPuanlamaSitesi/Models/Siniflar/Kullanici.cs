@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -10,8 +11,14 @@ namespace FilmPuanlamaSitesi.Models.Siniflar
     {
         [Key]
         public int ID { get; set; }
+
+        [Required(ErrorMessage = "Kullanıcı adını boş bırakmazsın!!!")]
         public string KullaniciAd { get; set; }
+
+        [Required(ErrorMessage = "Şifreyi boş bırakamazsın!!!")]
         public string Sifre { get; set; }
+
+        [Required(ErrorMessage = "Emaili boş bırakamazsın!!!")]
         public string Email { get; set; }
     }
 }

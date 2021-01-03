@@ -97,7 +97,7 @@ img {
 body {
     padding: 0;
     margin: 0;
-    background: url(../images/banner1.jpg)no-repeat;
+    background: url(../images/banner1.jpg)no-repeat center center fixed;
     background-size: cover;
     font-family: 'Federo', sans-serif;
 }
@@ -446,7 +446,7 @@ h2.resp-accordion {
 
 @media(max-width:1366px) {
     .resp-tab-item {
-        width: 42%;
+        width: 421px;
     }
 
     .social-btn a {

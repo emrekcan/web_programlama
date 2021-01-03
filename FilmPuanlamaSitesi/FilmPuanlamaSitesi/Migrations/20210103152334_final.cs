@@ -2,7 +2,7 @@
 
 namespace FilmPuanlamaSitesi.Migrations
 {
-    public partial class initialCrate : Migration
+    public partial class final : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -15,7 +15,7 @@ namespace FilmPuanlamaSitesi.Migrations
                     Baslik = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     FotoUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Aciklama = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Istatistik = table.Column<int>(type: "int", nullable: false)
+                    Istatistik = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -28,8 +28,9 @@ namespace FilmPuanlamaSitesi.Migrations
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    KullaniciAd = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Sifre = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    KullaniciAd = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Sifre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -62,7 +63,7 @@ namespace FilmPuanlamaSitesi.Migrations
                     Baslik = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Mail = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Telefon = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Konum = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Adres = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -76,7 +77,11 @@ namespace FilmPuanlamaSitesi.Migrations
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Baslik = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    FilmLink = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    FilmResim = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    FilmLink = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    FilmAd = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Sure = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Kategori = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -84,17 +89,18 @@ namespace FilmPuanlamaSitesi.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Homes",
+                name: "Kullanicis",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Baslik = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    FilmLink = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    KullaniciAd = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Sifre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Homes", x => x.ID);
+                    table.PrimaryKey("PK_Kullanicis", x => x.ID);
                 });
         }
 
@@ -116,7 +122,7 @@ namespace FilmPuanlamaSitesi.Migrations
                 name: "Genres");
 
             migrationBuilder.DropTable(
-                name: "Homes");
+                name: "Kullanicis");
         }
     }
 }

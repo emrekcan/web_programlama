@@ -4,19 +4,15 @@
     Layout = "~/Views/Shared/_LoginPageLayout.cshtml";
 }
 
-<!--Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE HTML>
 <html>
 <head>
     <title>REGISTER PAGE</title>
     <!-- Custom Theme files -->
-    <link href="~/login page/css/users.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/login page/css/userss.css" rel="stylesheet" type="text/css" media="all" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scaleLogin Page=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Flat Tab Forms Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
     <!--Google Fonts-->
@@ -25,7 +21,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!--google fonts-->
     <!--remove-->
     <script src="~/login page/js/jquery-1.11.0.min.js"></script>
-    <script src="~/login page/js/kontrol.js"></script>
     <script>
         $(document).ready(function (c) {
             $('.close').on('click', function (c) {
@@ -50,7 +45,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body>
     <!--header start here-->
-    <h1>SIGN UP PAGE</h1>
+    <h1> </h1>
     <div class="header agile">
         <div class="headder-main w3layouts">
             <div class="login agileinfo">
@@ -67,7 +62,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                         <h6> Name</h6>
                                         <input type="text" placeholder="Name" name="KullaniciAd" required="">
                                         <h6>Email</h6>
-                                        <input type="text" class="email" placeholder="Email" name="Email" id="Email" required="">
+                                        <input type="text" class="email" placeholder="Email" name="Email" id="Email" required="" pattern="[a-z0-9._%+-]+@@[a-z0-9.-]+\.[a-z]{2,3}$">
                                         <h6>Password</h6>
                                         <input type="password" class="password" placeholder="Password" name="Sifre" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">

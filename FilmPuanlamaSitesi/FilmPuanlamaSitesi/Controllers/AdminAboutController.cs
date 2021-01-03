@@ -5,12 +5,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FilmPuanlamaSitesi.Models.Siniflar;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FilmPuanlamaSitesi.Controllers
 {
     public class AdminAboutController : Controller
     {
         Context c = new Context();
+
+        [Authorize]
         public IActionResult Index()
         {
             var degerler = c.Abouts.ToList();

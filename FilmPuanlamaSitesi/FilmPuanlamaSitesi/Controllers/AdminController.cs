@@ -28,6 +28,10 @@ namespace FilmPuanlamaSitesi.Controllers
         [HttpPost]
         public IActionResult AddAdmin(Admin a)
         {
+            if (!ModelState.IsValid)
+            {
+                return View("AddAdmin");
+            }
             c.Admins.Add(a);
             c.SaveChanges();
             return RedirectToAction("Index");
@@ -47,8 +51,13 @@ namespace FilmPuanlamaSitesi.Controllers
             return View("Update", up);
         }
 
-        public IActionResult UpdateUser(Admin a)
+        public IActionResult UpdateAdmin(Admin a)
         {
+
+            if (!ModelState.IsValid)
+            {
+                return View("Update");
+            }
             var upd = c.Admins.Find(a.ID);
             upd.ID = a.ID;
             upd.KullaniciAd = a.KullaniciAd;
@@ -57,6 +66,5 @@ namespace FilmPuanlamaSitesi.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
-
     }
 }

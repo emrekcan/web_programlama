@@ -3,31 +3,36 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<html lang="zxx">
+<body>
+    <div style="margin-right:980px; margin-top:150px;"> </div>
+    <table class="table table-bordered table-striped w-auto" style="margin-right:100px; width:auto; height:auto; color:aqua;">
 
-<div style="margin-right:980px; margin-top:150px;">
-   
-</div>
-
-<table class="table table-bordered" style="margin-right:100px; width:auto; height:auto;">
-
-    <tr>
-        <th>ID</th>
-        <th>NAME</th>
-        <th>E-MAIL</th>
-        <th>PASSWORD</th>
-        <th>BAN</th>
-        <th>UPDATE</th>
-    </tr>
-    @foreach (var x in Model)
-    {
-<tr>
-    <td>@x.ID</td>
-    <td>@x.KullaniciAd</td>
-    <td>@x.Email</td>
-    <td>@x.Sifre</td>
-    <td><a  href="/Admin/DeleteUser/@x.ID" class="btn btn-warning">BAN</a></td>
-    <td><a href="/Admin/Update/@x.ID" class="btn btn-success">UPDATE</a></td>
-</tr>
-    }
-</table>
-<a href="/Admin/AddAdmin" class="btn btn-primary">Add Admin</a>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>E-MAIL</th>
+            <th>PASSWORD</th>
+            <th>BAN</th>
+            <th>UPDATE</th>
+        </tr>
+        @foreach (var x in Model)
+        {
+            <tr>
+                <td>@x.ID</td>
+                <td>@x.KullaniciAd</td>
+                <td>@x.Email</td>
+                <td>@x.Sifre</td>
+                <td><a href="/Admin/DeleteUser/@x.ID" class="btn btn-warning">BAN</a></td>
+                <td><a href="/Admin/Update/@x.ID" class="btn btn-success">UPDATE</a></td>
+            </tr>
+        }
+    </table>
+    <a href="/Admin/AddAdmin" class="btn btn-primary">Add Admin</a>
+</body>
+</html>

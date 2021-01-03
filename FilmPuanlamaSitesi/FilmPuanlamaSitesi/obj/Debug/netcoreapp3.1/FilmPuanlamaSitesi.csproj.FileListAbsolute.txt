@@ -209,9 +209,7 @@ C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\
 C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\FilmPuanlamaSitesi.TagHelpers.input.cache
 C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\FilmPuanlamaSitesi.TagHelpers.output.cache
 C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\FilmPuanlamaSitesi.RazorCoreGenerate.cache
-C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Film\About.cshtml.g.cs
 C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Film\Contact.cshtml.g.cs
-C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Film\Genre.cshtml.g.cs
 C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Film\Index.cshtml.g.cs
 C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
@@ -509,9 +507,7 @@ C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPu
 C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\FilmPuanlamaSitesi.TagHelpers.input.cache
 C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\FilmPuanlamaSitesi.TagHelpers.output.cache
 C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\FilmPuanlamaSitesi.RazorCoreGenerate.cache
-C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Film\About.cshtml.g.cs
 C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Film\Contact.cshtml.g.cs
-C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Film\Genre.cshtml.g.cs
 C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Film\Index.cshtml.g.cs
 C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
@@ -591,3 +587,34 @@ C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\
 C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\AdminGenre\Update.cshtml.g.cs
 C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Genre\Index.cshtml.g.cs
 C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_TRFilmLayout.cshtml.g.cs
+C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Film\TRIndex.cshtml.g.cs
+C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\bin\Debug\netcoreapp3.1\Microsoft.Owin.dll
+C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\bin\Debug\netcoreapp3.1\Microsoft.Owin.Security.dll
+C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\bin\Debug\netcoreapp3.1\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\bin\Debug\netcoreapp3.1\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\bin\Debug\netcoreapp3.1\Owin.dll
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\AdminAbout\Index.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\AdminAbout\Update.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\AdminContactUs\Index.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\AdminContactUs\Update.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\AdminContact\Index.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\AdminGenre\Index.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\AdminGenre\Update.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\AdminLogin\Login.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AddAdmin.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Update.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Film\TRIndex.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Genre\Index.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Kullanici\AddUser.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Kullanici\Index.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Kullanici\Update.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\LoginPage\Login.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\LoginPage\Register.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPageLayout.cshtml.g.cs
+C:\Users\emree\Desktop\Web Programlama\web_programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_TRFilmLayout.cshtml.g.cs

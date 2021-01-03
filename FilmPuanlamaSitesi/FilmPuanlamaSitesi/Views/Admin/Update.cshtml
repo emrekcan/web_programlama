@@ -4,25 +4,28 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<div style="margin-right:750px; margin-top:100px;">
+<div style="margin-right:750px; margin-top:100px; color:aqua;">
     <br />
-    @using (Html.BeginForm("UpdateUser", "Admin", FormMethod.Post))
+    @using (Html.BeginForm("UpdateAdmin", "Admin", FormMethod.Post))
     {
-        @Html.LabelFor(x => x.ID)
+        <label>ID</label>
         <br />
-        @Html.TextBoxFor(x => x.ID, new { @readonly = "readonly" })
+        @Html.TextBoxFor(x => x.ID, new { @class = "form-control", @readonly = "readonly" })
         <br />
-        @Html.LabelFor(x => x.KullaniciAd)
+        <label>Kullanıcı Adı</label>
         <br />
-        @Html.TextBoxFor(x => x.KullaniciAd)
+        @Html.TextBoxFor(x => x.KullaniciAd, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.KullaniciAd, "", new { @style = "color:blue" })
         <br />
-        @Html.LabelFor(x => x.Email)
+        <label>Email</label>
         <br />
-        @Html.TextBoxFor(x => x.Email)
+        @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.Email, "", new { @style = "color:blue" })
         <br />
-        @Html.LabelFor(x => x.Sifre)
+        <label>Şifre</label>
         <br />
-        @Html.TextBoxFor(x => x.Sifre)
+        @Html.TextBoxFor(x => x.Sifre, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.Sifre, "", new { @style = "color:blue" })
         <br />
         <div style="margin-top:10px;">
             <button class="btn btn-primary">Update User</button>

@@ -7,64 +7,63 @@
 <html lang="en">
 
 <head>
-
-    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="~/admin paneli/sidebar-master/css/styll.css">
+    <title>ADMIN PANEL</title>
+    <link rel="stylesheet" href="~/admin paneli/sidebar-master/css/sty.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-
+    <link href="//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
+          rel="stylesheet">
 </head>
 
 <body>
-
     <h1>ADMIN PANEL</h1>
     <br />
-    <input type="checkbox" name="checkbox" id="checkbox">
-    <aside id="sidebar">
-        <header class="navbar-header">
-            <a href="#" class="brand-logo" style="font-size:40px; color:red;"><b> Catalog</b></a>
-        </header>
-        <br />
-        <main class="navbar-body">
-            <ul>
-                <li class="nav-item">
-                    <a href="/Admin/Index/" class="nav-link" style="font-size:20px; color:orange;"> Admin </a>
-                </li>
-                <li class="nav-item">
-                    <a href="/Kullanici/Index/" class="nav-link" style="font-size:20px; color:orange;"> Users </a>
-                </li>
-                <li class="nav-item">
-                    <a href="/AdminGenre/Index/" class="nav-link" style="font-size:20px; color:orange;"> Genre </a>
-                </li>
-                <li class="nav-item">
-                    <a href="/AdminAbout/Index/" class="nav-link" style="font-size:20px; color:orange;"> About </a>
-                </li>
-                <li class="nav-item">
-                    <a href="/AdminContact/Index/" class="nav-link" style="font-size:20px; color:orange;"> Contact </a>
-                </li>
-                <li class="nav-item">
-                    <a href="/AdminContactUs/Index/" class="nav-link" style="font-size:20px; color:orange;"> Contact Us </a>
-                </li>
-                <li class="nav-item">
-                    <a href="/Film/Index/" class="nav-link" style="font-size:20px; color:orange;">Fragmanous</a>
-                </li>
-            </ul>
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <aside id="sidebar">
+            <header class="navbar-header">
+                <a href="#" class="brand-logo" style="font-size:40px; color:red;"><b> Catalog</b></a>
+            </header>
+            <br />
+            <main class="navbar-body">
+                <ul>
+                    <li class="nav-item">
+                        <a href="/Admin/Index/" class="nav-link" style="font-size:20px; color:orange;"> Admin </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Kullanici/Index/" class="nav-link" style="font-size:20px; color:orange;"> Users </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/AdminGenre/Index/" class="nav-link" style="font-size:20px; color:orange;"> Genre </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/AdminAbout/Index/" class="nav-link" style="font-size:20px; color:orange;"> About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/AdminContact/Index/" class="nav-link" style="font-size:20px; color:orange;"> Contact </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/AdminContactUs/Index/" class="nav-link" style="font-size:20px; color:orange;"> Contact Us </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Film/Index/" class="nav-link" style="font-size:20px; color:orange;">Fragmanous</a>
+                    </li>
+                </ul>
+            </main>
+        </aside>
+        <main id="main-content">
+            <label for="checkbox" class="check-box">
+                <span class="line line1"></span>
+                <span class="line line3"></span>
+                <span class="line line2"></span>
+            </label>
         </main>
-    </aside>
-    <main id="main-content">
-        <label for="checkbox" class="check-box">
-            <span class="line line1"></span>
-            <span class="line line3"></span>
-            <span class="line line2"></span>
-        </label>
-    </main>
 
-    <div>
-        @RenderBody()
-    </div>
+        <div>
+            @RenderBody()
+        </div>
 </body>
 
 </html>
