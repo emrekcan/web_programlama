@@ -590,3 +590,4 @@ C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\
 C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\AdminGenre\Index.cshtml.g.cs
 C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\AdminGenre\Update.cshtml.g.cs
 C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\obj\Debug\netcoreapp3.1\Razor\Views\Genre\Index.cshtml.g.cs
+C:\Users\Home\Desktop\git\Web-Programlama\FilmPuanlamaSitesi\FilmPuanlamaSitesi\bin\Debug\netcoreapp3.1\libman.json

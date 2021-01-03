@@ -152,6 +152,7 @@ namespace FilmPuanlamaSitesi.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("KullaniciAd")

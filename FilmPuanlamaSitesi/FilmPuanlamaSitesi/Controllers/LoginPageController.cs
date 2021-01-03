@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -14,9 +15,11 @@ namespace FilmPuanlamaSitesi.Controllers
     {
         Context c = new Context();
 
+
         [HttpGet]
         public IActionResult Login()
-        {
+        {   
+            
             return View();
         }
 
@@ -35,14 +38,15 @@ namespace FilmPuanlamaSitesi.Controllers
                 await HttpContext.SignInAsync(principal);
                 return RedirectToAction("Index", "Film");
             }
-
-            return View();
+            
+             return View();
+            
+            
         }
 
         [HttpGet]
         public IActionResult Register()
         {
-
             return View();
         }
 

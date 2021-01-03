@@ -8,10 +8,10 @@ namespace FilmPuanlamaSitesi.Controllers
 {
     public class AboutController : Controller
     {
-        Context ctxt = new Context();
+        Context c = new Context();
         public IActionResult Index()
         {
-            var aciklama = ctxt.Abouts.ToList();
+            var aciklama = c.Abouts.ToList();
             return View(aciklama);
         }
     }

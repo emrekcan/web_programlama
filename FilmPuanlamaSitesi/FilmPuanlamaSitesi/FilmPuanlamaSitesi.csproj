@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>67d8e95c-992a-4c61-a905-fd106e52992c</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,7 +13,7 @@
 
   <ItemGroup>
     <None Include="wwwroot\FilmSitesi\about.html" />
-    <None Include="wwwroot\FilmSitesi\assets\css\style-starter.css" />
+    <None Include="wwwroot\FilmSitesi\assets\css\style-star.css" />
     <None Include="wwwroot\FilmSitesi\assets\fonts\fontawesome-webfont.eot" />
     <None Include="wwwroot\FilmSitesi\assets\fonts\fontawesome-webfont.svg" />
     <None Include="wwwroot\FilmSitesi\assets\fonts\fontawesome-webfont.ttf" />
@@ -88,6 +90,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
   </ItemGroup>
 
